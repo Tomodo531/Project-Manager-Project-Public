@@ -1,0 +1,130 @@
+.group {
+	margin-bottom: 2rem;
+}
+
+.group__header {
+	display: flex;
+	align-items: center;
+}
+
+.group__headline {
+	margin-right: 20px;
+}
+
+.group__newAssignment {
+	margin-right: 10px;
+}
+
+.group__assignmentTable {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0 .5em;
+}
+
+.group__assignmentTable th {
+	text-align: left;
+}
+
+.group__assignmentTable th button {
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.group__Sortascending::after {
+	content: " ⬆️";
+}
+
+.group__Sortdescending::after {
+	content: " ⬇️";
+}
+
+.group__assignmentTable tbody tr td,
+.group__assignmentTable thead tr th {
+	padding: 5px 7px 5px 7px;
+}
+
+.group__assignmentTable tbody tr {
+	/* background-color: #f9f9f9; */
+	background-color: #eeeeee;
+	transition: all .1s ease;
+	cursor: pointer;
+}
+
+.group__assignmentTable tbody tr:hover {
+	background-color: #dadada;
+	border-radius: 7px;
+}
+
+.group__assignmentName {
+	width: 450px;
+	overflow: hidden;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+
+.group__assignmentPriority {
+	width: 120px;
+}
+
+.group__assignmentStatus {
+	width: 190px;
+}
+
+.group__assignmentDeadline {
+	width: 140px;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
+.group__priotyWrap,
+.group__statusWrap {
+	display: block;
+	border-radius: 7px;
+	padding: 5px 10px 5px 10px;
+	text-align: center;
+	font-weight: 600;
+	color: white;
+}
+
+.group__priotyWrap {
+	width: 110px;
+}
+
+.group__statusWrap {
+	width: 140px;
+}
+
+.group__assignmentNot {
+	background-color: #c8c8c8;
+}
+
+.group__assignmentLow,
+.group__assignmentDone {
+	background-color: #39c38d;
+}
+
+.group__assignmentMedium,
+.group__assignmentWorking {
+	background-color: #ffa700;
+}
+
+.group__assignmentHigh,
+.group__assignmentStuck {
+	background-color: #ff6961;
+}
+
+.group__assignmentCritical {
+	background-color: #2e2e2e;
+}
+
+.group__assignmentWaiting {
+	background-color: #61caf7;
+}
+
+.group__assignmentApproved {
+	background-color: #1a3bf5;
+}

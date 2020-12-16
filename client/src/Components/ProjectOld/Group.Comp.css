@@ -1,0 +1,13 @@
+.group{
+    border: solid;
+}
+
+.group__header {
+    display: flex;
+    align-items: center;
+}
+
+.group__createAsignment{
+    height: 38px;
+    margin: 0 .5rem 0 .5rem;
+}
